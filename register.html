@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .main-div {
+      display: flex;
+      gap: 20px;             
+      width: 900px;         
+    }
+
+    .banner-div {
+      flex: 0 0 50%;         
+      background: url('/images/uwp4575400.webp') center/cover no-repeat;
+      border: 1px solid #e63946;       
+      border-radius: 16px 16px 16px 16px;      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      overflow: hidden;   
+    }
+
+    .banner-div .top {
+      padding: 30px 20px;
+    }
+
+    .banner-div input {
+      background: rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.8);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .banner-div h2 {
+      margin: 20px 0 10px;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    .banner-div h3 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .banner-div .footer-div {
+      background: #2ecc71;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 0 0 16px 0;   
+    }
+
+    .form-div {
+      flex: 0 0 50%;
+      background: #fff;
+      border-radius: 16px 16px 16px 16px; 
+      padding: 40px 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .form-div h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .form-div input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 1px solid #999;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .form-div button {
+      width: 100%;
+      padding: 14px;
+      background: #6a5acd;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .form-div button:hover {
+      background: #5a4bcf;
+    }
+
+    .form-div small {
+      display: block;
+      margin-top: 15px;
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+    }
+
+    .form-div a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-div">
+
+    <div class="banner-div">
+      <div class="top">
+        <input type="text" value="frontend and backend" readonly>
+        <h2>Learn to program<br>by watching professionals</h2>
+        <h3>See how experienced developers solve<br>problems in real time</h3>
+      </div>
+      <div class="footer-div">
+        Try it free 7 days, then $20/mo
+      </div>
+    </div>
+
+    <div class="form-div">
+      <form>
+        <h1>Sign up for the course<br>and get free 7 days</h1>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email Address">
+        <input type="password" placeholder="Password">
+        <button type="submit">Claim your free trial</button>
+        <small>
+          By clicking the button, you are agreeing to our
+          <a href="termsandservices.html" >Terms and Services</a>
+        </small>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
